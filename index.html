@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ph-Hero</title>
+    <!-- Tailwind css and daisy ui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="max-w-screen-xl mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start hidden md:block lg:block">
+          <a class="btn btn-ghost"><img src="images/Logo.png" alt="" /></a>
+        </div>
+
+        <div class="navbar-center">
+          <a
+            onclick="sortVideosByViewsDescending()"
+            id="short_by_view_button"
+            class="btn"
+            >Sort by view</a
+          >
+        </div>
+
+        <div class="navbar-end">
+          <a
+            href="blog.html"
+            class="btn bg-gradient-to-r from-[#F85559] to-[#F85559] text-white"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </nav>
+    <hr class="w-[92%] bg-[#17171733] h-1 mx-auto" />
+
+    <!-- Tab_Start----------- -->
+    <div class="tab_container w-full mt-10">
+      <div
+        class="tabs flex justify-center text-center w-96 m-auto text-lg font-semibold gap-5 uppercase cursor-pointer"
+        id="tab_container"
+      ></div>
+      
+    </div>
+    <!-- Tab_End================= -->
+    
+    <!-- Card_Design_Start----------- -->
+ <div class="max-w-screen-xl mx-auto mt-6 mb-10">
+  <div id="card_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+  </div>
+</div>
+<!-- Card_Design_End================= -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
